@@ -6,17 +6,18 @@ const infoContainer = document.querySelector('#infoContainer')
 const remove = document.createElement("button")
 remove.innerText = " Remove"
 
-const books = function() {
-    let books;
-    if(localStorage.getItem('books') === null) {
-      books = [];
-    } else {
-      books = JSON.parse(localStorage.getItem('books'));
-    }
+// const store = function() {
+//     let books;
+//     if(localStorage.getItem('books') === null) {
+//       books = [];
+//     } else {
+//       books = JSON.parse(localStorage.getItem('books'));
+//     }
 
-    return books;
-  }
+//     return books;
+//   }
 
+  
 
 const books = [
 //     {
