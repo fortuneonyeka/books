@@ -11,11 +11,13 @@ function clearOut() {
   title.value = '';
   author.value = '';
 }
-
-function Book(title, author) {
-  this.title = title;
-  this.author = author;
+class Book{
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
+
 
 function getBooks() {
   books = JSON.parse(localStorage.books);
