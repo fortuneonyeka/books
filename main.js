@@ -9,14 +9,16 @@ const bookHolder = document.querySelector('#bookContainer');
 
 let books = [];
 
-function clearOut() {
-  title.value = '';
-  author.value = '';
-}
+
 class Book{
   constructor(title, author) {
     this.title = title;
     this.author = author;
+}
+
+static clearOut() {
+  title.value = '';
+  author.value = '';
 }
 }
 
@@ -62,6 +64,6 @@ class UI{
 btn.onclick = (e) => {
   e.preventDefault();
   UI.addBook();
-  clearOut();
+  Book.clearOut();
 };
 if (localStorage.length > 0) UI.getBooks();
