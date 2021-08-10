@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-plusplus */
+/* eslint-disable max-classes-per-file */
 
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
@@ -9,22 +10,19 @@ const bookHolder = document.querySelector('#bookContainer');
 
 let books = [];
 
-
-class Book{
+class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
+  }
+
+  static clearOut() {
+    title.value = '';
+    author.value = '';
+  }
 }
 
-static clearOut() {
-  title.value = '';
-  author.value = '';
-}
-}
-
-
-class UI{
-  
+class UI {
   static getBooks() {
     books = JSON.parse(localStorage.books);
     bookHolder.innerHTML = '';
@@ -38,28 +36,25 @@ class UI{
       </div>`;
     }
   }
-  
+
   static updateLocalStorage() {
     localStorage.books = JSON.stringify(books);
     UI.getBooks();
   }
-  
+
   static addBook() {
     const newBook = new Book(title.value, author.value);
-  
+
     books.push(newBook);
-  
+
     UI.updateLocalStorage();
   }
-  
+
   static destroyBook(id) {
     books.splice(id, 1);
     UI.updateLocalStorage();
   }
-  
 }
-
-
 
 btn.onclick = (e) => {
   e.preventDefault();

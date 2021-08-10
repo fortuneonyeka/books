@@ -1,7 +1,9 @@
-.container h1, .container #books{
+.container h1,
+.container #books {
   text-align: center;
 }
-.flex{
+
+.flex {
   display: flex;
   justify-content: center;
 }
