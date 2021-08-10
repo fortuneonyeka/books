@@ -13,11 +13,13 @@ function clearOut() {
   title.value = '';
   author.value = '';
 }
-
-function Book(title, author) {
+class Book{
+  constructor(title, author) {
     this.title = title;
     this.author = author;
 }
+}
+
 
 class UI{
   
