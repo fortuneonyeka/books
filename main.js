@@ -1,8 +1,8 @@
-const title = document.querySelector('#book-title')
-const author = document.querySelector('#book-author')
+const title = document.querySelector('#title')
+const author = document.querySelector('#author')
 const btn = document.querySelector('.btn')
 const bookHolder = document.querySelector('#bookContainer')
-
+let books = []
 function clearOut() {
   title.value = '';
   author.value = '';
@@ -12,48 +12,45 @@ function Book(title, author) {
   this.title = title
   this.author = author
 }
-let books = JSON.parse(localStorage.getItem('books')) || [];
 
-console.log(books)
+function updateLocalStorage() {
+  localStorage.books = JSON.stringify(books);
+  getBooks();
+}
+
 function addBook() {
   const newBook = new Book(title.value, author.value)
 
   books.push(newBook)
-  localStorage.setItem('books', JSON.stringify(books))
+  
+updateLocalStorage();
 }
 
-function listBooks(books) {
 
-  books.forEach((book) => {
-    const li = document.createElement("li");
-    const bookTitle = document.createElement("p");
-    const bookAuthor = document.createElement("p");
-    const remove = document.createElement("button");
-    const line = document.createElement("hr");
-    remove.classList = 'delete'
-    remove.innerText = "Remove";
-    bookTitle.innerText = "title name: " + book.title;
-    bookAuthor.innerText = "Author: " + book.author;
-    li.append(bookTitle, bookAuthor, remove, line);
-    bookHolder.appendChild(li)
-  })
-
+function destroyBook(id) {
+  books.splice(id, 1);
+  updateLocalStorage();
 }
 
-listBooks(books)
 
-bookHolder.onclick = (e) => {
-  e.preventDefault();
-  // console.log(e.target.parentElement.parentElement)
-  if (e.target.classList.contains('delete')) {
-    const parent = e.target.parentElement;
-    parent.remove()
+function getBooks() {
+  books = JSON.parse(localStorage.books);
+  bookHolder.innerHTML = "";
+  let id = 0;
+  for (book of books) {
+    bookHolder.innerHTML += `
+    <div>
+      <p>${book.title}</p>
+      <p>${book.author}</p>
+      <button onClick="destroyBook(${id++})">Remove</button>
+    </div>`;
   }
-};
+}
+
 
 btn.onclick = (e) => {
   e.preventDefault();
   addBook()
-  // clearOut()
-  listBooks(books)
+  clearOut()
 };
+if (localStorage.length > 0) getBooks();
