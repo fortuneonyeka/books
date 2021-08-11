@@ -53,5 +53,20 @@ body {
   font-family: inherit;
 }
 
+.display{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 56px;
+  grid-template-areas:
+    "a a a a b b b b"; 
+}
 
+.remove {
+  
+  grid-area: b;
+}
+
+.book{
+  grid-area: a; 
+}
 
