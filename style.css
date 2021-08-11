@@ -17,14 +17,16 @@ body {
 }
 
 .btn {
-  width: 20%;
   background-color: #8e44ad;
   color: #fff;
   font-size: 18px;
-  display: inline;
+  max-width: 30%;
+  width: 10em;
   float: right;
-  padding: 20px;
+  margin: 5px;
 }
+
+
 
 .author {
   margin-top: 0.5rem;
