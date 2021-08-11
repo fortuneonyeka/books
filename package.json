@@ -1,0 +1,29 @@
+{
+  "name": "books",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"https://www.microverse.org/\">     <img alt=\"Microverse\" src=\"https://img.shields.io/badge/-Microverse-blueviolet?style=flat-square\">   </a>   <a href=\"https://github.com/fortuneonyeka/books/blob/main/LICENSE\">     <img alt=\"MIT Licensed\" src=\"https://img.shields.io/github/license/fortuneonyeka/books?style=flat-square\">   </a>   <a href=\"https://github.com/fortuneonyeka/books\">     <img alt=\"GitHub Repo stars\" src=\"https://img.shields.io/github/stars/fortuneonyeka/books?color=pink&label=%E2%98%85%20stars%20&style=flat-square\">   </a> </p>",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortuneonyeka/books.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fortuneonyeka/books/issues"
+  },
+  "homepage": "https://github.com/fortuneonyeka/books#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.20.1"
+  }
+}

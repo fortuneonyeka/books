@@ -1,5 +1,11 @@
-.container {
+.container h1,
+.container #books {
   text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
