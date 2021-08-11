@@ -16,6 +16,9 @@ body {
   justify-content: center;
 }
 
+
+
+
 .btn {
   width: 20%;
   background-color: #8e44ad;
@@ -24,6 +27,7 @@ body {
   display: inline;
   float: right;
   padding: 20px;
+ 
 }
 
 .author {
@@ -34,7 +38,8 @@ body {
   background-color: whitesmoke;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  width: 65%;
+  width: 400px;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -48,18 +53,20 @@ body {
   font-family: inherit;
 }
 
-.display {
+.display{
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 70px;
-  grid-template-areas: "a a a a b b b b";
+  gap: 56px;
+  grid-template-areas:
+    "a a a a b b b b"; 
 }
 
 .remove {
+  
   grid-area: b;
-  margin: 5px;
 }
 
-.book {
-  grid-area: a;
+.book{
+  grid-area: a; 
 }
+
