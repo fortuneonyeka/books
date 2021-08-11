@@ -29,10 +29,9 @@ class UI {
     let id = 0;
     for (const book of books) {
       bookHolder.innerHTML += `
-      <div>
-        <p><strong>title:</strong> ${book.title}</p>
-        <p><strong>Author:</strong> ${book.author}</p>
-        <button onClick="UI.destroyBook(${id++})">Remove</button> 
+      <div class= "display">
+        <p class="book>${book.title} by ${book.author}</p>
+        <button class= "remove" onClick="UI.destroyBook(${id++})">Remove</button> 
       </div>`;
     }
   }
