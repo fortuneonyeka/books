@@ -62,7 +62,7 @@ body {
 }
 
 .remove {
-  
+  margin: 5px;
   grid-area: b;
 }
 
