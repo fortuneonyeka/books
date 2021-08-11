@@ -1,17 +1,57 @@
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 .container h1,
 .container #books {
   text-align: center;
 }
 
 .flex {
+  background-color: #b3d1d2;
+  display: inline-block;
   display: flex;
   justify-content: center;
 }
 
+
+
+
 .btn {
   width: 20%;
+  background-color: #8e44ad;
+  color: #fff;
+  font-size: 18px;
+  display: inline;
+  float: right;
+  padding: 20px;
+ 
 }
 
 .author {
   margin-top: 0.5rem;
 }
+
+.container {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.form-group input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+}
+
+
+
