@@ -48,12 +48,11 @@ body {
   font-family: inherit;
 }
 
-.display{
+.display {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 70px;
-  grid-template-areas:
-    "a a a a b b b b"; 
+  grid-template-areas: "a a a a b b b b";
 }
 
 .remove {
@@ -61,7 +60,6 @@ body {
   margin: 5px;
 }
 
-.book{
-  grid-area: a; 
+.book {
+  grid-area: a;
 }
-
