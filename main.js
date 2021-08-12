@@ -2,6 +2,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-plusplus */
 /* eslint-disable max-classes-per-file */
+/* eslint-disable no-undef */
 
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
@@ -12,8 +13,7 @@ const add = document.querySelector('#add');
 const contact = document.querySelector('#contact');
 const { DateTime } = luxon;
 
-
-document.getElementById('date-time').innerHTML = `${DateTime.now().toLocaleString(DateTime.DATETIME_MED)}`
+document.getElementById('date-time').innerHTML = `${DateTime.now().toLocaleString(DateTime.DATETIME_MED)}`;
 
 list.onclick = (e) => {
   e.preventDefault();
