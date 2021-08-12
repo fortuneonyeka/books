@@ -133,3 +133,7 @@ footer p {
   text-align: right;
   padding-right: 1em;
 }
+
+.active {
+  display: block;
+}
