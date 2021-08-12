@@ -14,22 +14,23 @@
   <h5>awesome books</h5>
   <nav>
     <ul>
-      <li><a href="#" data-target="list" class="nav-link">List</a></li>
-      <li><a href="#" data-target="add new" class="nav-link">Add new</a></li>
-      <li><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+      <li><a href="#" id="list" class="nav-link">List</a></li>
+      <li><a href="#" id="add" class="nav-link">Add new</a></li>
+      <li><a href="#" id="contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 </header>
 
   <div class="container">
-    <div class="page" id="list">
+    <div class="page show-list">
       <h1>Awesome Books</h1>
       <div class="flex">
         <div id="bookContainer"> </div>
       </div>
-      <br>
+    </div>
+      
 
-      <div class="page" id="form">
+      <div class="page add" id="clearfix" >
         <form action="" id="books" class="form-group">
           <div>
             <input type="text" placeholder="Title" class="title" id="title">
@@ -46,16 +47,14 @@
         </form>
 
       </div>
-
-
-      <div>
-        <div  class="page" id="contact">
+      <div class="page contact">
+        <div>
           <h1>All contacts</h1>
         </div>
       </div>
-      <script src="main.js"></script>
-    </div>
   </div>
+  
+  <script src="main.js"></script>
 </body>
 
 </html>
