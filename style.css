@@ -66,6 +66,8 @@
 
 .page {
   display: none;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 header {
