@@ -12,6 +12,8 @@
 
 # Awesome Books
 
+This is a simple single page website that allows users to add/remove books from a book list.
+
 _Screenshot: TBA_
 
 ## Built With
