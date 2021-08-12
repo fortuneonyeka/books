@@ -4,8 +4,6 @@
   justify-content: center;
 }
 
-
-
 .container h1,
 .container #books {
   text-align: center;
@@ -28,12 +26,6 @@
   margin: 5px;
 }
 
-#clearfix::after {
-  content: "";
-  clear: both;
- 
-}
-
 .author {
   margin-top: 0.5rem;
 }
@@ -42,7 +34,6 @@
   background-color: whitesmoke;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  /* width: 400px; */
   max-width: 100%;
   overflow: hidden;
 }
@@ -77,12 +68,12 @@
   display: none;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
 }
 
-ul{
+ul {
   display: flex;
   gap: 20px;
   list-style: none;
