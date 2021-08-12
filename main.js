@@ -15,24 +15,23 @@ const contact = document.querySelector("#contact")
 
 list.onclick = (e) => {
   e.preventDefault();
-  document.querySelector(".page").style.display = "none";
+  document.querySelector(".add").style.display = "none";
+  document.querySelector(".contact").style.display = "none";
   document.querySelector(".show-list").style.display = "block";
 }
 
-
 add.onclick = (e) => {
   e.preventDefault();
-  document.querySelector(".page").style.display = "none";
+  document.querySelector(".show-list").style.display = "none";
+  document.querySelector(".contact").style.display = "none";
   document.querySelector(".add").style.display = "block";
 }
 
-
 contact.onclick = (e) => {
   e.preventDefault();
-  document.querySelector(".page").style.display = "none";
-  // document.querySelector(".add").style.display = "none";
+  document.querySelector(".show-list").style.display = "none";
+  document.querySelector(".add").style.display = "none";
   document.querySelector(".contact").style.display = "block";
-  
 }
 
 let books = [];
