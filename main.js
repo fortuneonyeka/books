@@ -11,6 +11,9 @@ const list = document.querySelector("#list")
 const add = document.querySelector("#add")
 const contact = document.querySelector("#contact")
 
+const dt = new Date();
+document.getElementById('date-time').innerHTML=dt;
+
 
 
 list.onclick = (e) => {
