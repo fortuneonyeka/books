@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   min-height: 100%;
   height: 100%;
 }
@@ -9,6 +9,11 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .container h1,
@@ -35,14 +40,6 @@ body {
 
 .author {
   margin-top: 0.5rem;
-}
-
-.container {
-  background-color: whitesmoke;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
-  overflow: hidden;
 }
 
 .form-group input {
@@ -85,39 +82,33 @@ header {
   font-size: 20px;
 }
 
-
-
 ul {
   display: flex;
   gap: 20px;
   list-style: none;
-  
 }
 
-
-
-#list{
-  border-right: solid black 1px;
-  padding: 5px;
- 
-}
-#add{
+#list {
   border-right: solid black 1px;
   padding: 5px;
 }
 
+#add {
+  border-right: solid black 1px;
+  padding: 5px;
+}
 
-.our-contacts{
+.our-contacts {
   display: flex;
   flex-direction: column;
 }
 
-.nav-link{
+.nav-link {
   text-decoration: none;
   color: black;
 }
 
-footer{
+footer {
   /* text-align: center; */
 
   border: 1px solid black;
@@ -125,19 +116,20 @@ footer{
   position: absolute;
   bottom: 0;
   width: 100%;
+
   /* height: 2.5rem;   */
 }
 
-footer p{
+footer p {
   margin-left: 20px;
   padding: 5px;
 }
-.contact h3{
-  margin: 0px;
+
+.contact h3 {
+  margin: 0;
 }
 
 #date-time {
   text-align: right;
   padding-right: 1em;
 }
-

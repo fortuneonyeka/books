@@ -7,35 +7,33 @@ const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const btn = document.querySelector('.btn');
 const bookHolder = document.querySelector('#bookContainer');
-const list = document.querySelector("#list")
-const add = document.querySelector("#add")
-const contact = document.querySelector("#contact")
+const list = document.querySelector('#list');
+const add = document.querySelector('#add');
+const contact = document.querySelector('#contact');
 
 const dt = new Date();
-document.getElementById('date-time').innerHTML=dt;
-
-
+document.getElementById('date-time').innerHTML = dt;
 
 list.onclick = (e) => {
   e.preventDefault();
-  document.querySelector(".add").style.display = "none";
-  document.querySelector(".contact").style.display = "none";
-  document.querySelector(".show-list").style.display = "block";
-}
+  document.querySelector('.add').style.display = 'none';
+  document.querySelector('.contact').style.display = 'none';
+  document.querySelector('.show-list').style.display = 'block';
+};
 
 add.onclick = (e) => {
   e.preventDefault();
-  document.querySelector(".show-list").style.display = "none";
-  document.querySelector(".contact").style.display = "none";
-  document.querySelector(".add").style.display = "block";
-}
+  document.querySelector('.show-list').style.display = 'none';
+  document.querySelector('.contact').style.display = 'none';
+  document.querySelector('.add').style.display = 'block';
+};
 
 contact.onclick = (e) => {
   e.preventDefault();
-  document.querySelector(".show-list").style.display = "none";
-  document.querySelector(".add").style.display = "none";
-  document.querySelector(".contact").style.display = "block";
-}
+  document.querySelector('.show-list').style.display = 'none';
+  document.querySelector('.add').style.display = 'none';
+  document.querySelector('.contact').style.display = 'block';
+};
 
 let books = [];
 
