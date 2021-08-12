@@ -1,6 +1,9 @@
-/* body {
-  font-size: 20px;
-} */
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  height: 100%;
+}
 
 .container {
   text-align: center;
@@ -113,3 +116,11 @@ ul {
   text-decoration: none;
   color: black;
 }
+
+footer{
+  text-align: center;
+  border: 1px solid black;
+  height: 50px;
+}
+
+
