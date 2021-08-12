@@ -10,9 +10,10 @@ const bookHolder = document.querySelector('#bookContainer');
 const list = document.querySelector('#list');
 const add = document.querySelector('#add');
 const contact = document.querySelector('#contact');
+const { DateTime } = luxon;
 
-const dt = new Date();
-document.getElementById('date-time').innerHTML = dt;
+
+document.getElementById('date-time').innerHTML = `${DateTime.now().toLocaleString(DateTime.DATETIME_MED)}`
 
 list.onclick = (e) => {
   e.preventDefault();
