@@ -28,6 +28,12 @@
   margin: 5px;
 }
 
+#clearfix::after {
+  content: "";
+  clear: both;
+ 
+}
+
 .author {
   margin-top: 0.5rem;
 }
@@ -68,7 +74,7 @@
 }
 
 .page {
-  /* display: none; */
+  display: none;
 }
 
 header{
