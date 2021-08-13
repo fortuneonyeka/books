@@ -5,37 +5,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://moment.github.io/luxon/global/luxon.min.js" ></script>
   <link rel="stylesheet" href="style.css">
   <title>Awesome Books</title>
 </head>
 
 <body>
-
+  <header>
+    <h5>awesome books</h5>
+    <nav>
+      <ul class="header-items">
+        <li><a href="#" id="list" class="nav-link">List </a></li>
+        <li><a href="#" id="add" class="nav-link">Add new</a></li>
+        <li><a href="#" id="contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+  <div><p id="date-time"></p></div>
   
   <div class="container">
-    <h1>Awesome Books</h1>
-    <div class="flex">
-      <div id="bookContainer"> </div>
+    <div class="page show-list">
+      <h1>Awesome Books</h1>
+      <div class="flex">
+        <div id="bookContainer"> </div>
+      </div>
     </div>
 
-    <br>
-    <hr />
-    <form action="" id="books" class="form-group">
-      <div>
-        <input type="text" placeholder="Title" class="title" id="title">
-      </div>
 
-      <div>
-        <input type="text" placeholder="Author" class="author" id="author">
-      </div>
-      <br>
-      <div>
-        <input type="submit" class="btn" id="button" value="Add">
-      </div>
+    <div class="page add">
+      <form action="" id="books" class="form-group">
+        <div>
+          <input type="text" placeholder="Title" class="title" id="title">
+        </div>
 
-    </form>
-    <script src="main.js"></script>
+        <div>
+          <input type="text" placeholder="Author" class="author" id="author">
+        </div>
+        <br>
+        <div>
+          <input type="submit" class="btn" id="button" value="Add">
+        </div>
+      </form>
+
+    </div>
+
+    
+    <div class="page contact active">
+        <h3>contact information</h3>
+        <p>Do you have any questions or you just want to say "Hello"?</p>
+        <p>you can reach out to us!</p>
+        <ul class="our-contacts">
+          <li><a target=”_blank” href="https://github.com/fortuneonyeka">Github Link</a></li>
+          <li>Email: ihedfortune@gmail.com</li>
+          <li><a target=”_blank” href="https://github.com/ixboy">Github Link </a></li>
+          <li>Email:ismaelixboy@gmail.com</li>
+          <li><a target=”_blank” href="https://github.com/fortuneonyeka/books">Project Github</a></li>
+        </ul>
+    </div>
   </div>
+  <div>
+  <footer><p>© 2021 awesome books</p></footer>
+</div>
+  <script src="main.js" ></script>
 </body>
 
 </html>
